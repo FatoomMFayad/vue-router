@@ -7,6 +7,7 @@
     :to="link"
     class="btn btn-primary">
     Edit User</router-link>
+    <hr>
 
 </div>
 </template>
@@ -23,9 +24,17 @@ export default {
                         q: 100
                     },
                     hash: '#data',
-                    
+
             }
         }
+    },
+    beforeRouteEnter(to, from, next) {
+        if(true) {
+            next();
+        }else {
+            next(false);
+        }
+        
     }
 }
 </script>
