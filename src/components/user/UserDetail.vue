@@ -22,7 +22,8 @@ export default {
                         locale: 'en', 
                         q: 100
                     },
-                    hash: '#data'
+                    hash: '#data',
+                    
             }
         }
     }
